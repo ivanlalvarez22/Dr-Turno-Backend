@@ -50,3 +50,9 @@ app.listen(port, () => {
   connectDB();
   console.log(`Server running on port http://localhost:${port}`);
 });
+
+// Exportar la aplicación para Vercel
+export default app;
+
+// Conectar a la base de datos al iniciar
+connectDB();
